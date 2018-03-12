@@ -35,7 +35,7 @@ static __be32 priv_ip_mask;
 static __be32 priv_ip_first;
 static int start = 0;
 static int timeout = 255; //60 by default
-static char lanstr[20] = "192.168.2.0/24";  //CHANGED
+static char lanstr[20] = "192.168.1.0/24";  //CHANGED
 static u_int16_t port = 10000;
 module_param(start, int, S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP);
 
@@ -380,7 +380,7 @@ static int __init init(void)
  }
  //le_mask = le_mask << zeroes;
  priv_ip_mask = le_mask;
- priv_ip_first = htonl(ip_asc_to_int("192.168.1.0"));   //CHANGED
+ priv_ip_first = htonl(ip_asc_to_int("192.168.2.0"));   //CHANGED
  myip = htonl(ip_asc_to_int("192.168.0.120"));          //CHANGED
  netfilter_ops_in.hook = main_hook_post;
 
