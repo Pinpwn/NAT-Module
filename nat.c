@@ -380,8 +380,8 @@ static int __init init(void)
  }
  //le_mask = le_mask << zeroes;
  priv_ip_mask = le_mask;
- priv_ip_first = htonl(ip_asc_to_int("192.168.0.0"));   //CHANGED
- myip = htonl(ip_asc_to_int("192.168.2.1"));          //CHANGED
+ priv_ip_first = htonl(ip_asc_to_int("192.168.2.0"));   //CHANGED
+ myip = htonl(ip_asc_to_int("192.168.0.120"));          //CHANGED
  netfilter_ops_in.hook = main_hook_post;
 
  netfilter_ops_in.pf = PF_INET;
