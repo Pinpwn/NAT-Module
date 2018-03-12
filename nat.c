@@ -16,7 +16,7 @@
 
 #include <net/netfilter/nf_nat.h>
 #include <net/netfilter/nf_nat_core.h>
-#include <net/netfilter/nf_nat_l3proto.h>
+#include "nf_nat_l3proto.h"
 
 static int __net_init iptable_nat_table_init(struct net *net);
 
