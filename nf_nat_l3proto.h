@@ -39,7 +39,7 @@ int nf_nat_l3proto_register(const struct nf_nat_l3proto *);
 void nf_nat_l3proto_unregister(const struct nf_nat_l3proto *);
 const struct nf_nat_l3proto *__nf_nat_l3proto_find(u8 l3proto);
 
-int nf_nat_icmp_reply_translation(struct sk_buff *skb, struct nf_conn *ct,
+//int nf_nat_icmp_reply_translation(struct sk_buff *skb, struct nf_conn *ct,
 				  enum ip_conntrack_info ctinfo,
 				  unsigned int hooknum);
 
