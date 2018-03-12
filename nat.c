@@ -35,7 +35,7 @@ static __be32 priv_ip_mask;
 static __be32 priv_ip_first;
 static int start = 0;
 static int timeout = 10000; //60 by default
-static char lanstr[20] = "192.168.1.0/24";  //CHANGED
+static char lanstr[20] = "192.168.0.0/24";  //CHANGED
 static u_int16_t port = 10000;
 module_param(start, int, S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP);
 
